@@ -24,10 +24,9 @@ function App() {
   
   const classes = useStyles();
   
-  
   const [data, setData] = useState([])
   const [dataLoad, setDataLoad] = useState(false)
-    const url = 'http://localhost:5000/'
+    const url = 'http://localhost:5000/alldata'
     useEffect(async () => {
       const result =  await axios({
         url: url,
@@ -44,7 +43,7 @@ function App() {
       setDataLoad(true);
     },[dataLoad]);
 
-
+  
 
   return (
     <div className="App">
