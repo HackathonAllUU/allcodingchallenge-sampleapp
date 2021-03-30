@@ -120,7 +120,7 @@ const data = [
 export const Example = () => {
     return (
         <BarChart
-          width={1200}
+          width={1100}
           height={300}
           data={data}
           margin={{
